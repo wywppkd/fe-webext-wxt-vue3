@@ -1,4 +1,5 @@
 import App from "./App.vue";
+import "@/assets/global.css";
 
 export default defineContentScript({
   matches: ["*://*.baidu.com/*"],

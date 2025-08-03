@@ -5,7 +5,7 @@ const handleClick = () => {
 </script>
 
 <template>
-  <div class="download_video_container">
+  <div class="fixed w-10 h-10 bg-blue-500 cursor-pointer top-10 right-0 z-999999">
     <div @click="handleClick" class="download_button" title="下载功能">下载1990</div>
   </div>
 </template>
@@ -16,7 +16,7 @@ const handleClick = () => {
   height: 30px;
 }
 
-.download_video_container {
+/* .download_video_container {
   width: 200px;
   height: 200px;
   cursor: pointer;
@@ -25,5 +25,5 @@ const handleClick = () => {
   right: 10px;
   z-index: 1000;
   background-color: rgb(74, 17, 230);
-}
+} */
 </style>
