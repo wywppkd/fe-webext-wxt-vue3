@@ -1,12 +1,19 @@
 <script lang="ts" setup>
-const handleClick = () => {
-  alert("下载功能正在开发中，敬请期待！");
+import { ref } from "vue";
+import { sendMessage } from "@/messaging";
+const inputText = ref("");
+
+const handleClick = async () => {
+  // 发送指定消息类型
+  const length = await sendMessage("getStringLength", inputText.value);
+  alert(length);
 };
 </script>
 
 <template>
   <div class="fixed bg-blue-300 cursor-pointer top-10 right-0 z-999999 rounded-md p-0.5 text-white">
-    <div class="font-white" @click="handleClick">下载1990</div>
+    <input class="bg-blue-500 text-white" type="text" @keydown.enter="handleClick" v-model="inputText" />
+    <div class="font-white" @click="handleClick">计算长度</div>
   </div>
 </template>
 
