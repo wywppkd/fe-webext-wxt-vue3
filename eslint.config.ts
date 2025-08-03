@@ -19,5 +19,11 @@ export default defineConfig([
     files: ["**/*.vue"],
     languageOptions: { parserOptions: { parser: tseslint.parser } },
   },
+  {
+    rules: {
+      "@typescript-eslint/no-explicit-any": "off", // 允许使用 any 类型
+      "@typescript-eslint/no-unused-vars": "warn", // 未使用变量改为警告
+    },
+  },
   eslintConfigPrettier, // 禁用与 Prettier 冲突的 ESLint 规则
 ]);
