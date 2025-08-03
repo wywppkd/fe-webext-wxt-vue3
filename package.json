@@ -1,0 +1,37 @@
+{
+  "name": "fe-webext-wxt-vue3",
+  "description": "manifest.json description",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "dev:firefox": "wxt -b firefox",
+    "build": "wxt build",
+    "build:firefox": "wxt build -b firefox",
+    "zip": "wxt zip",
+    "zip:firefox": "wxt zip -b firefox",
+    "compile": "vue-tsc --noEmit",
+    "postinstall": "wxt prepare"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@tailwindcss/vite": "^4.1.11",
+    "@wxt-dev/module-vue": "^1.0.2",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-vue": "^10.3.0",
+    "globals": "^16.3.0",
+    "jiti": "^2.5.1",
+    "prettier": "3.6.2",
+    "sass": "^1.89.2",
+    "tailwindcss": "^4.1.11",
+    "typescript": "5.6.3",
+    "typescript-eslint": "^8.38.0",
+    "vue-tsc": "^2.2.10",
+    "wxt": "^0.20.6"
+  }
+}
