@@ -5,17 +5,12 @@ const handleClick = () => {
 </script>
 
 <template>
-  <div class="fixed w-10 h-10 bg-blue-500 cursor-pointer top-10 right-0 z-999999">
-    <div @click="handleClick" class="download_button" title="下载功能">下载1990</div>
+  <div class="fixed bg-blue-300 cursor-pointer top-10 right-0 z-999999 rounded-md p-0.5 text-white">
+    <div class="font-white" @click="handleClick">下载1990</div>
   </div>
 </template>
 
 <style scoped>
-.download_button {
-  width: 100%;
-  height: 30px;
-}
-
 /* .download_video_container {
   width: 200px;
   height: 200px;
